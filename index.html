@@ -2,22 +2,29 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Site dos Amigos</title>
-  <style>
-    body {
-      background: #0f0f1a;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      color: #ff79c6;
-    }
-  </style>
+  <title>Ordem Paranormal RPG</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 </head>
 <body>
-  <h1>💖 Bem-vindos, amigos!</h1>
-  <p>Esse site é só nosso 😎✨</p>
+
+  <h1>🕯️ Ordem Paranormal</h1>
+
+  <div class="ficha">
+    <h2 id="nome">Personagem</h2>
+
+    <p>❤️ HP: <span id="hp">0</span></p>
+    <button onclick="alterarHP(-1)">-1</button>
+    <button onclick="alterarHP(1)">+1</button>
+
+    <p>🧠 Sanidade: <span id="sanidade">0</span></p>
+    <button onclick="alterarSanidade(-1)">-1</button>
+    <button onclick="alterarSanidade(1)">+1</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
